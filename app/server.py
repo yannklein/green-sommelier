@@ -8,8 +8,8 @@ from io import BytesIO
 from fastai import *
 from fastai.vision import *
 
-# model_file_url = 'https://www.dropbox.com/s/y4kl2gv1akv7y4i/stage-2.pth?raw=1'
-model_file_url = 'https://www.dropbox.com/s/l3c7piy6a5bo56m/greens.pth?dl=0'
+model_file_url = 'https://www.dropbox.com/s/y4kl2gv1akv7y4i/stage-2.pth?raw=1'
+# model_file_url = 'https://www.dropbox.com/s/l3c7piy6a5bo56m/greens.pth?dl=0'
 model_file_name = 'model'
 # classes = ['black', 'grizzly', 'teddys']
 classes = ['lettuce', 'cauliflower', 'broccoli', 'napa-cabage', 'hakusai', 'spinach', 'kale']
