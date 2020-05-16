@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+torch-nightly = "*"
+fastai = "*"
+starlette = "*"
+uvicorn = "*"
+python-multipart = "*"
+aiofiles = "*"
+aiohttp = "*"
+
+[requires]
+python_version = "3.7"
