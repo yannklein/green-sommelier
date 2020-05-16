@@ -3,20 +3,13 @@ FROM python:3.6-slim-stretch
 RUN apt update
 RUN apt install -y python3-dev gcc
 
-# Install pytorch and fastai
-RUN pip install torch_nightly -f https://download.pytorch.org/whl/nightly/cpu/torch_nightly.html
-RUN pip install fastai
+ADD requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 
-# Install starlette and uvicorn
-RUN pip install starlette uvicorn python-multipart aiohttp
+COPY app app/
 
-ADD cougar.py cougar.py
-ADD usa-inaturalist-cats.pth usa-inaturalist-cats.pth
+RUN python app/server.py
 
-# Run it once to trigger resnet download
-RUN python cougar.py
+EXPOSE 8080
 
-EXPOSE 8008
-
-# Start the server
-CMD ["python", "cougar.py", "serve"]
+CMD ["python", "app/server.py", "serve"]
