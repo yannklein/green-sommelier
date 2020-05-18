@@ -11,7 +11,8 @@ from fastai.vision import *
 
 # model_file_url = 'https://www.dropbox.com/s/y4kl2gv1akv7y4i/stage-2.pth?raw=1'
 # model_file_url = 'https://www.dropbox.com/s/l3c7piy6a5bo56m/greens.pth?raw=1'
-model_file_url = "https://www.dropbox.com/s/5r70h60ts3z7or7/green-model-v2.pth?raw=1"
+# model_file_url = "https://www.dropbox.com/s/5r70h60ts3z7or7/green-model-v2.pth?raw=1"
+model_file_url =  "https://www.dropbox.com/s/1v8a5nmez8kfny7/green-model-v3.pth?raw=1"
 model_file_name = 'model'
 # classes = ['black', 'grizzly', 'teddys']
 # classes = ['lettuce', 'cauliflower', 'broccoli', 'napa-cabage', 'hakusai', 'spinach', 'kale']

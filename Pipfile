@@ -3,15 +3,9 @@ name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
 
-[[source]]
-name = "pytorch-nightly"
-url = "https://download.pytorch.org/whl/nightly/cu100/torch_nightly.html"
-verify_ssl = true
-
 [dev-packages]
 
 [packages]
-torch-nightly = "*"
 fastai = "*"
 starlette = "*"
 uvicorn = "*"
