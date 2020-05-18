@@ -18,8 +18,11 @@ model_file_name = 'model'
 classes = ['mizuna', 'komatsuna', 'horenso', 'cabbage', 'hakusai']
 path = Path(__file__).parent
 
-os.remove(path/'models'/f'{model_file_name}.pth')
-print("Old model removed!")
+model_path = path/'models'/f'{model_file_name}.pth'
+
+if os.path.isfile(model_path):
+  os.remove(model_path)
+  print("Old model removed!")
 
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
